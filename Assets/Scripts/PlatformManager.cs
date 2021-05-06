@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
-//using MonoBehaviour;
 
-public class PlatformManager  {
+public class PlatformManager : MonoBehaviour {
 	
 	public Transform prefab;
 	public int numberOfObjects;

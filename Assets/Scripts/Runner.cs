@@ -1,9 +1,9 @@
 using UnityEngine;
-//using MonoBehavior;
+using MonoBehavior;
 using UnityEngine.EventSystems;
-//using UnityStandardAssets;
+using UnityStandardAssets.ImageEffects;
 
-public class Runner  {
+public class Runner : MonoBehaviour {
 
 	public Vector3 offset, rotationVelocity;
 	public static float distanceTraveled;
@@ -95,17 +95,6 @@ public class Runner  {
 				enabled = false;
 		}
 
-    public override bool Equals(object obj)
-    {
-        return obj is Runner runner &&
-               System.Collections.Generic.EqualityComparer<Vector3>.Default.Equals(offset, runner.offset) &&
-               System.Collections.Generic.EqualityComparer<Vector3>.Default.Equals(rotationVelocity, runner.rotationVelocity) &&
-               System.Collections.Generic.EqualityComparer<Vector3>.Default.Equals(boostVelocity, runner.boostVelocity) &&
-               System.Collections.Generic.EqualityComparer<Vector3>.Default.Equals(jumpVelocity, runner.jumpVelocity) &&
-               acceleration == runner.acceleration &&
-               gameOverY == runner.gameOverY &&
-               touchingPlatform == runner.touchingPlatform &&
-               IsGUIVisible == runner.IsGUIVisible &&
-               System.Collections.Generic.EqualityComparer<Vector3>.Default.Equals(startPosition, runner.startPosition);
-    }
-}
+	}
+
+	
