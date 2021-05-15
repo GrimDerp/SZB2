@@ -176,6 +176,16 @@ MonoBehaviour:
   maxGap: {x: 4, y: 1.5, z: 0}
   minY: -25
   maxY: -50
+  materials:
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 28a26a94edf750542a31783ce0beb878, type: 2}
+  - {fileID: 2100000, guid: 9d4958322de533c4d9b1be1025f49bc2, type: 2}
+  physicMaterials:
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 8a43530b8dd4df149a0ca32d197a5b7e, type: 2}
+  - {fileID: 13400000, guid: f1ae0d83efea95e4fa41c29260e16b76, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +501,16 @@ MonoBehaviour:
   maxGap: {x: 4, y: 1.5, z: 0}
   minY: -15
   maxY: -75
+  materials:
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 28a26a94edf750542a31783ce0beb878, type: 2}
+  - {fileID: 2100000, guid: 9d4958322de533c4d9b1be1025f49bc2, type: 2}
+  physicMaterials:
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 8a43530b8dd4df149a0ca32d197a5b7e, type: 2}
+  - {fileID: 13400000, guid: f1ae0d83efea95e4fa41c29260e16b76, type: 2}
 --- !u!1 &1664596359
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +564,16 @@ MonoBehaviour:
   maxGap: {x: 4, y: 1.5, z: 0}
   minY: -5
   maxY: 10
+  materials:
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 28a26a94edf750542a31783ce0beb878, type: 2}
+  - {fileID: 2100000, guid: 9d4958322de533c4d9b1be1025f49bc2, type: 2}
+  physicMaterials:
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 8a43530b8dd4df149a0ca32d197a5b7e, type: 2}
+  - {fileID: 13400000, guid: f1ae0d83efea95e4fa41c29260e16b76, type: 2}
 --- !u!1 &1678460950
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +627,16 @@ MonoBehaviour:
   maxGap: {x: 4, y: 1.5, z: 0}
   minY: 55
   maxY: 155
+  materials:
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 28a26a94edf750542a31783ce0beb878, type: 2}
+  - {fileID: 2100000, guid: 9d4958322de533c4d9b1be1025f49bc2, type: 2}
+  physicMaterials:
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 8a43530b8dd4df149a0ca32d197a5b7e, type: 2}
+  - {fileID: 13400000, guid: f1ae0d83efea95e4fa41c29260e16b76, type: 2}
 --- !u!1 &1738226833
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +683,7 @@ MonoBehaviour:
   prefab: {fileID: 5291212960337251048, guid: 5993edcbf970b9049a0c9c402c2b2cdd, type: 3}
   numberOfObjects: 15
   recycleOffset: 60
-  startPosition: {x: -50, y: -50, z: 50}
+  startPosition: {x: -50, y: -75, z: 50}
   minSize: {x: 5, y: 10, z: 5}
   maxSize: {x: 15, y: 35, z: 15}
 --- !u!1 &1812053501
@@ -661,6 +701,7 @@ GameObject:
   - component: {fileID: 1812053506}
   - component: {fileID: 1812053507}
   - component: {fileID: 1812053511}
+  - component: {fileID: 1812053508}
   m_Layer: 0
   m_Name: Runner
   m_TagString: GameController
@@ -778,6 +819,105 @@ MonoBehaviour:
   m_Thrust: 20
   acceleration: 12
   rb: {fileID: 0}
+--- !u!96 &1812053508
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812053501}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 5
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 10
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 1
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!122 &1812053511
 Halo:
   m_ObjectHideFlags: 0
@@ -843,3 +983,13 @@ MonoBehaviour:
   maxGap: {x: 4, y: 1.5, z: 0}
   minY: 15
   maxY: 45
+  materials:
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 7edd538a5a8064844b8f369486751b7d, type: 2}
+  - {fileID: 2100000, guid: 28a26a94edf750542a31783ce0beb878, type: 2}
+  - {fileID: 2100000, guid: 9d4958322de533c4d9b1be1025f49bc2, type: 2}
+  physicMaterials:
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 07a53468fdddb6a46829e2230db948c7, type: 2}
+  - {fileID: 13400000, guid: 8a43530b8dd4df149a0ca32d197a5b7e, type: 2}
+  - {fileID: 13400000, guid: f1ae0d83efea95e4fa41c29260e16b76, type: 2}

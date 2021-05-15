@@ -18,6 +18,10 @@ public class PlatformManager : MonoBehaviour
 
     public float minY, maxY;
 
+    public Material[] materials;
+
+    public PhysicMaterial[] physicMaterials;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +63,10 @@ public class PlatformManager : MonoBehaviour
 		Transform o = objectQueue.Dequeue();
 		o.localScale = scale;
 		o.localPosition = position;
-		nextPosition.x += scale.x;
+        int materialIndex = Random.Range(0, materials.Length);
+        o.GetComponent<Renderer>().material = materials[materialIndex];
+        o.GetComponent<Collider>().material = physicMaterials[materialIndex];
+		//nextPosition.x += scale.x;
 		objectQueue.Enqueue(o);
 
         nextPosition += new Vector3(
