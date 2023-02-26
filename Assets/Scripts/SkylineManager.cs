@@ -66,3 +66,4 @@ public class NewBaseType
 [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
 public class SkylineManager : NewBaseType, MonoBehaviour {
 }
+// works as intended!
